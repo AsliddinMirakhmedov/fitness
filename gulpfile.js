@@ -19,7 +19,7 @@ global.$ = {
         build: {
             html: './app/build',
             style: './app/build/style',
-            js:'./app/build/js',
+            js:'./app/build/js/',
             img:'./app/build/images',
             fonts: './app/build/fonts',
             video: './app/build/video'

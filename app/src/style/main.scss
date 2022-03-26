@@ -362,9 +362,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     width: 100%;
-    background-color: #e4e9ed;
+    position: absolute;
+    z-index: -1;
+    top: 1px;
 
     .player {
         max-width: 607px;
@@ -409,6 +410,10 @@
 
             .progress {
                 width: 300px;
+                
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

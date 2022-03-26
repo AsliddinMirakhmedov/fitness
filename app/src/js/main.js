@@ -145,75 +145,61 @@ let controls__play = document.querySelector('.controls__play');
 let video_play = document.querySelector('.video_play');
 let progress = document.querySelector('.controls__progress input');
 let time = document.querySelector('.controls__time');
+let wrapper = document.querySelector('.wrapper');
 
-function pause_play() {
-    if(video.paused) {
+controls__play.addEventListener('click', () => {
+    if (video.paused) {
         video.play();
-    }else {
+        video_play.classList.remove('fa-play')
+        video_play.classList.add('fa-pause')
+    } else {
         video.pause();
+        video_play.classList.add('fa-play')
+        video_play.classList.remove('fa-pause')
     }
-}
+})
 
-video_play.addEventListener('click', pause_play)
+video.addEventListener('timeupdate', () => {
 
-console.log(video_play);
+    progress.value = (video.currentTime / video.duration) * 100
 
-// function timer() {
-//     progress.value = (video.currentTime / video.duration) * 100
+    let minute = Math.floor(video.currentTime / 60)
+    if (minute < 10) {
+        minute = '0' + String(minute)
+    }
 
-//     let minute = Math.floor(video.currentTime / 60)
-//     if (minute < 10) {
-//         minute = '0' + String(minute)
-//     }
+    let seconds = Math.floor(video.currentTime % 60)
+    if (seconds < 10) {
+        seconds = '0' + String(seconds)
+    }
 
-//     let seconds = Math.floor(video.currentTime % 60)
-//     if (seconds < 10) {
-//         seconds = '0' + String(seconds)
-//     }
+    time.innerHTML = `${minute}:${seconds}`
+})
 
-//     time.innerHTML = `${minute}:${seconds}`
-// }
+progress.addEventListener('change', () => {
+    video.currentTime = (progress.value * video.duration) / 100
+})
 
-
-// video.addEventListener('timeupdate', timer)
-
-// function setProgress() {
-//     video.currentTime = (progress.value * video.duration) / 100
-// }
-
-// progress.addEventListener('change', setProgress)
+// console.log('fdafsfgfsdfg');
 
 play.addEventListener('click', () => {
-    video.style = `z-index: 10`
+    wrapper.style.zIndex = `10`
     video.play();
+    wrapper.style = `z-index: unset;`
     view__img.style = `height: 340px;`
+
     window.addEventListener('scroll', () => {
-
-        if (scrollY <= 1100) {
+        // console.log(scrollY);
+        if (scrollY <= 915) {
             video.pause();
         }
 
-        if (scrollY <= 1100) {
-            video.pause();
-        }
-    })
-    console.log(window.screenY);
-})
-
-video.addEventListener('click', () => {
-    // video.style = `z-index: -1`
-    // view__img.style = `height: unset;`
-    // video.pause();
-    window.addEventListener('scroll', () => {
-        console.log(scrollY);
-        if (scrollY <= 1100) {
-            video.pause();
-        }
-        else if (scrollY >= 1100) {
+        if (scrollY >= 1100) {
             video.pause();
         }
     })
 })
+
 
 var swiper = new Swiper(".sw-1", {
     effect: "flip",
@@ -237,3 +223,7 @@ var swiper = new Swiper(".sw-2", {
 
     loop: true
 });
+
+console.log(5465465);
+console.log('sdfsdfsdf');
+console.log('asliddin2009_programmer');

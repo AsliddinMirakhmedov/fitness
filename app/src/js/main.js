@@ -223,7 +223,3 @@ var swiper = new Swiper(".sw-2", {
 
     loop: true
 });
-
-console.log(5465465);
-console.log('sdfsdfsdf');
-console.log('asliddin2009_programmer');

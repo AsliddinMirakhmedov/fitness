@@ -43,183 +43,199 @@ boot3.addEventListener('click', () => {
     skidka.innerHTML = `30%`
 })
 
-let stars = document.querySelectorAll('.star');
+// let stars = document.querySelectorAll('.star');
 
-for (let i = 0; i < stars.length; i++) {
-    const star = stars[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars.length; k++) {
-            stars[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars.length; i++) {
+//     const star = stars[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars.length; k++) {
+//             stars[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars[a].classList.add('active')
-        }
-    })
-}
+//         for (let a = 0; a < num_a; a++) {
+//             stars[a].classList.add('active')
+//         }
+//     })
+// }
 
-let stars2 = document.querySelectorAll('.star2');
+// let stars2 = document.querySelectorAll('.star2');
 
-for (let i = 0; i < stars2.length; i++) {
-    const star = stars2[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars2.length; k++) {
-            stars2[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars2.length; i++) {
+//     const star = stars2[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars2.length; k++) {
+//             stars2[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars2[a].classList.add('active')
-        }
-    })
-}
+//         for (let a = 0; a < num_a; a++) {
+//             stars2[a].classList.add('active')
+//         }
+//     })
+// }
 
-let stars3 = document.querySelectorAll('.star3');
+// let stars3 = document.querySelectorAll('.star3');
 
-for (let i = 0; i < stars3.length; i++) {
-    const star = stars3[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars3.length; k++) {
-            stars3[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars3.length; i++) {
+//     const star = stars3[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars3.length; k++) {
+//             stars3[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars3[a].classList.add('active')
-        }
-    })
-}
-let stars4 = document.querySelectorAll('.star4');
+//         for (let a = 0; a < num_a; a++) {
+//             stars3[a].classList.add('active')
+//         }
+//     })
+// }
+// let stars4 = document.querySelectorAll('.star4');
 
-for (let i = 0; i < stars4.length; i++) {
-    const star = stars4[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars4.length; k++) {
-            stars4[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars4.length; i++) {
+//     const star = stars4[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars4.length; k++) {
+//             stars4[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars4[a].classList.add('active')
-        }
-    })
-}
+//         for (let a = 0; a < num_a; a++) {
+//             stars4[a].classList.add('active')
+//         }
+//     })
+// }
 
-let stars5 = document.querySelectorAll('.star5');
+// let stars5 = document.querySelectorAll('.star5');
 
-for (let i = 0; i < stars5.length; i++) {
-    const star = stars5[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars5.length; k++) {
-            stars5[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars5.length; i++) {
+//     const star = stars5[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars5.length; k++) {
+//             stars5[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars5[a].classList.add('active')
-        }
-    })
-}
+//         for (let a = 0; a < num_a; a++) {
+//             stars5[a].classList.add('active')
+//         }
+//     })
+// }
 
-let stars6 = document.querySelectorAll('.star6');
+// let stars6 = document.querySelectorAll('.star6');
 
-for (let i = 0; i < stars6.length; i++) {
-    const star = stars6[i];
-    star.addEventListener('click', () => {
-        let num_a = star.getAttribute('num-a')
-        for (let k = 0; k < stars6.length; k++) {
-            stars6[k].classList.remove('active')
-        }
+// for (let i = 0; i < stars6.length; i++) {
+//     const star = stars6[i];
+//     star.addEventListener('click', () => {
+//         let num_a = star.getAttribute('num-a')
+//         for (let k = 0; k < stars6.length; k++) {
+//             stars6[k].classList.remove('active')
+//         }
 
-        for (let a = 0; a < num_a; a++) {
-            stars6[a].classList.add('active')
-        }
-    })
-}
+//         for (let a = 0; a < num_a; a++) {
+//             stars6[a].classList.add('active')
+//         }
+//     })
+// }
 
-let play = document.querySelector('.play');
-let video = document.querySelector('.video');
-let view__img = document.querySelector('.view__img');
-let controls__play = document.querySelector('.controls__play');
-let video_play = document.querySelector('.video_play');
-let progress = document.querySelector('.controls__progress input');
-let time = document.querySelector('.controls__time');
-let wrapper = document.querySelector('.wrapper');
+// let play = document.querySelector('.play');
+// let video = document.querySelector('.video');
+// let view__img = document.querySelector('.view__img');
+// let controls__play = document.querySelector('.controls__play');
+// let video_play = document.querySelector('.video_play');
+// let progress = document.querySelector('.controls__progress input');
+// let time = document.querySelector('.controls__time');
+// let wrapper = document.querySelector('.wrapper');
 
-controls__play.addEventListener('click', () => {
-    if (video.paused) {
-        video.play();
-        video_play.classList.remove('fa-play')
-        video_play.classList.add('fa-pause')
-    } else {
-        video.pause();
-        video_play.classList.add('fa-play')
-        video_play.classList.remove('fa-pause')
-    }
-})
+// controls__play.addEventListener('click', () => {
+//     if (video.paused) {
+//         video.play();
+//         video_play.classList.remove('fa-play')
+//         video_play.classList.add('fa-pause')
+//     } else {
+//         video.pause();
+//         video_play.classList.add('fa-play')
+//         video_play.classList.remove('fa-pause')
+//     }
+// })
 
-video.addEventListener('timeupdate', () => {
+// video.addEventListener('timeupdate', () => {
 
-    progress.value = (video.currentTime / video.duration) * 100
+//     progress.value = (video.currentTime / video.duration) * 100
 
-    let minute = Math.floor(video.currentTime / 60)
-    if (minute < 10) {
-        minute = '0' + String(minute)
-    }
+//     let minute = Math.floor(video.currentTime / 60)
+//     if (minute < 10) {
+//         minute = '0' + String(minute)
+//     }
 
-    let seconds = Math.floor(video.currentTime % 60)
-    if (seconds < 10) {
-        seconds = '0' + String(seconds)
-    }
+//     let seconds = Math.floor(video.currentTime % 60)
+//     if (seconds < 10) {
+//         seconds = '0' + String(seconds)
+//     }
 
-    time.innerHTML = `${minute}:${seconds}`
-})
+//     time.innerHTML = `${minute}:${seconds}`
+// })
 
-progress.addEventListener('change', () => {
-    video.currentTime = (progress.value * video.duration) / 100
-})
+// progress.addEventListener('change', () => {
+//     video.currentTime = (progress.value * video.duration) / 100
+// })
 
 // console.log('fdafsfgfsdfg');
 
-play.addEventListener('click', () => {
-    wrapper.style.zIndex = `10`
-    video.play();
-    wrapper.style = `z-index: unset;`
-    view__img.style = `height: 340px;`
+// play.addEventListener('click', () => {
+//     wrapper.style.zIndex = `10`
+//     video.play();
+//     wrapper.style = `z-index: unset;`
+//     view__img.style = `height: 340px;`
 
-    window.addEventListener('scroll', () => {
-        // console.log(scrollY);
-        if (scrollY <= 915) {
-            video.pause();
-        }
+//     window.addEventListener('scroll', () => {
+//         // console.log(scrollY);
+//         if (scrollY <= 915) {
+//             video.pause();
+//         }
 
-        if (scrollY >= 1100) {
-            video.pause();
-        }
-    })
-})
+//         if (scrollY >= 1100) {
+//             video.pause();
+//         }
+//     })
+// });
 
 
-var swiper = new Swiper(".sw-1", {
-    effect: "flip",
-    grabCursor: true,
-});
+// var swiper = new Swiper(".sw-1", {
+//     effect: "flip",
+//     grabCursor: true,
+// });
 
-var swiper = new Swiper(".sw-2", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    keyboard: {
-        enabled: true,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+// var swiper = new Swiper(".sw-2", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     keyboard: {
+//         enabled: true,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
 
-    loop: true
+//     loop: true
+// });
+
+const menu = document.querySelector('.menu');
+const header__right = document.querySelector('.header__right');
+let body = document.querySelector('body'); 
+let header = document.querySelector('.container');
+
+menu.addEventListener('click', () => {
+   menu.classList.toggle('active');
+   if (menu.classList.contains('active')) {
+      header__right.style = `right: 0px`;
+      body.style = `overflow: hidden`;
+   }else if (menu.classList.item('active')) {
+      header__right.style = `right: -100%`;
+      body.style = `overflow: visibly`;
+   }
 });

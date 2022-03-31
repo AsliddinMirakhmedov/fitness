@@ -249,7 +249,8 @@
     margin: 0 auto;
     color: #051101;
     opacity: 0.7;
-    width: 469px;
+    max-width: 469px;
+    width: 100%;
 }
 
 .shop {
@@ -259,7 +260,7 @@
 
     &__boots {
         display: flex;
-        gap: 30px;
+        justify-content: space-between;
     }
 
     &__boot {
@@ -430,6 +431,7 @@
 
             .progress {
                 width: 300px;
+                height: 25px;
 
                 &:hover {
                     cursor: pointer;
@@ -449,6 +451,10 @@
 
     &__img {
         width: 609px;
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__title {
@@ -822,7 +828,7 @@
 
     & a {
         margin: 0 auto;
-        display: block;
+        // display: block;
         width: 160px;
         display: flex;
     }

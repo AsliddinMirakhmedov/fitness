@@ -10,6 +10,33 @@
    .header__intro__left__links {
       margin-bottom: 50px;
    }
+   
+   .view_left_right {
+      flex-direction: column;
+   }
+   
+   .view__right {
+      position: relative;
+      top: -100px;
+   }
+   
+   .view__left {
+      max-width: 650px;
+      width: 100%;
+   }
+   
+   .view__img {
+      max-width: 609px;
+      width: 100%;
+   }
+}
+
+
+@media (max-width: 1120px) {
+   .shop__boot img {
+      max-width: 350px;
+      width: 100%;
+   }
 }
 
 @media (max-width: 1090px) {
@@ -34,6 +61,14 @@
 
    .boots {
       margin-bottom: 70px;
+   }
+}
+
+@media (max-width: 900px) {
+   .shop__boots {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 30px;
    }
 }
 
@@ -96,6 +131,12 @@
    }
 }
 
+@media (max-width: 759px) {
+   .shop__boot img {
+      max-width: 300px;
+   }
+}
+
 @media (max-width: 750px) {
    .header__intro__left {
       flex-direction: column;
@@ -120,6 +161,16 @@
 
    .header__intro__left__customers {
       justify-content: center;
+   }
+}
+
+@media (max-width: 680px) {
+   
+}
+
+@media (max-width: 659px) {
+   .shop__boot img {
+      max-width: 270px;
    }
 }
 
@@ -161,6 +212,22 @@
    }
 }
 
+@media (max-width: 599px) {
+   .shop__boot img {
+      max-width: 250px;
+   }
+
+   .shop__title {
+      font-size: 20px;
+   }
+
+   .stars i,
+   .stars2 i,
+   .stars3 i {
+      font-size: 24px;
+   }
+}
+
 @media (max-width: 580px) {
    .big_img {
       width: 500px !important;
@@ -193,6 +260,24 @@
 
    .boot {
       width: 70px;
+   }
+}
+
+@media (max-width: 559px) {
+   .shop__boots {
+      column-gap: 0px;
+   }
+}
+
+@media (max-width: 529px) {
+   .shop__boot img {
+      max-width: 240px;
+   }
+}
+
+@media (max-width: 500px) {
+   .title {
+      font-size: 38px;
    }
 }
 
@@ -257,6 +342,16 @@
    }
 }
 
+@media (max-width: 414px) {
+   .title {
+      font-size: 34px;
+   }
+
+   .text {
+      line-height: 135%;
+   }
+}
+
 @media (max-width: 350px) {
    .header__intro__left__title {
       font-size: 40px;
@@ -316,6 +411,16 @@
    }
 }
 
+@media (max-width: 337px) {
+   .title {
+      font-size: 27px;
+   }
+   
+   .text {
+      font-size: 14px;
+  }
+}
+
 @media (max-width: 300px) {
    .header__intro__left__links {
       flex-direction: column;
@@ -339,7 +444,7 @@
    .boot {
       width: 50px;
    }
-   
+
    .header__intro__left__customers {
       gap: 30px;
    }

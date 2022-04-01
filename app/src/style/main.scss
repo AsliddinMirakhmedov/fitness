@@ -2,12 +2,12 @@
 
 .header {
     background: #EBFFE4;
-    
+
     &__right {
-       display: flex;
-       justify-content: space-between;
-       flex-grow: 0.5;
-       align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 0.5;
+        align-items: center;
     }
 
     &__bc {
@@ -388,9 +388,18 @@
     z-index: -1;
     top: 1px;
 
+    &.active {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.835);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
     .player {
         max-width: 607px;
-        width: 100%;
         border-radius: 10px;
         position: relative;
 
@@ -451,7 +460,7 @@
 
     &__img {
         width: 609px;
-        
+
         &:hover {
             cursor: pointer;
         }
@@ -544,15 +553,15 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 636.85px;
-    height: 568.78px;
+    width: 636px;
+    height: 568px;
     border-radius: 10px;
 }
 
 .swiper-slide img {
     display: block;
-    width: 636.85px;
-    height: 568.78px;
+    width: 636px;
+    height: 568px;
 }
 
 .best_shoes {
@@ -881,24 +890,27 @@
 }
 
 .menu {
-   //  display: block;
+    //  display: block;
     width: 43px;
     height: 40px;
     position: relative;
     overflow: hidden;
     transition: 0.5s;
     display: none;
-    
-    &.active &__item{
+
+    &.active &__item {
         &:nth-child(1) {
             left: -100%;
         }
+
         &:nth-child(2) {
             transform: rotate(45deg);
         }
+
         &:nth-child(3) {
             transform: rotate(-45deg);
         }
+
         &:nth-child(4) {
             left: 100%;
         }
@@ -924,6 +936,7 @@
         &:nth-child(3) {
             top: 20px;
         }
+
         &:nth-child(4) {
             top: 30px;
         }
@@ -931,3 +944,8 @@
 }
 
 // footer end
+
+.controls__play i {
+    font-size: 30px;
+    color: white
+}

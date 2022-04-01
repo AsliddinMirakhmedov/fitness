@@ -180,39 +180,54 @@ progress.addEventListener('change', () => {
     video.currentTime = (progress.value * video.duration) / 100
 })
 
+let media_680 = window.matchMedia("(max-width: 680px)")
+let media_550 = window.matchMedia("(max-width: 550px)")
+let media_450 = window.matchMedia("(max-width: 450px)")
+let media_350 = window.matchMedia("(max-width: 350px)")
+
 play.addEventListener('click', video_play_click);
 view__img.addEventListener('click', video_play_click);
 
 function video_play_click() {
-    wrapper.style.zIndex = `10`
+    wrapper.style.zIndex = `100`
     video.play();
-    wrapper.style = `z-index: unset;`
     view__img.style = `height: 340px;`
+    media(media_680);
+    space()
+}
+
+function space() {
+    let trueOrFalse = true
     window.addEventListener('keyup', function (e) {
         if (e.code == 'Space') {
-            if (video.played) {
+            if (trueOrFalse) {
                 video.pause()
                 video_play.classList.add('fa-play')
                 video_play.classList.remove('fa-pause')
-            } 
-            // else if (video.paused) {
-            else {
+                trueOrFalse = false
+            } else {
                 video.play();
                 video_play.classList.remove('fa-play')
                 video_play.classList.add('fa-pause')
+                trueOrFalse = true
             }
         }
     })
+}
 
-    //     // console.log(scrollY);
-    //     if (scrollY <= 915) {
-    //         video.pause();
-    //     }
-
-    //     if (scrollY >= 1100) {
-    //         video.pause();
-    //     }
-    // })
+function media(media_680) {
+    if (media_680.matches) {
+        view__img.style = `height: 241px;`
+    }
+    if (media_550.matches) {
+        view__img.style = `height: 191px;`
+    }
+    if (media_450.matches) {
+        view__img.style = `height: 168px;`
+    }
+    if (media_350.matches) {
+        view__img.style = `height: 118px;`
+    }
 }
 
 video.addEventListener('click', () => {
@@ -227,11 +242,21 @@ video.addEventListener('click', () => {
     }
 })
 
-console.log('fdgs');
+const player = document.querySelector('.player');
+
+video.addEventListener('dblclick', () => {
+    wrapper.classList.toggle('active')
+    if (wrapper.classList.contains('active')) {
+        body.style = `overflow: hidden`
+    }else {
+        body.style = `overflow: visibly`
+    }
+})
 
 var swiper = new Swiper(".sw-1", {
     effect: "flip",
     grabCursor: true,
+    loop: true
 });
 
 var swiper = new Swiper(".sw-2", {
